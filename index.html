@@ -7,43 +7,69 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      background: #0b0f1a;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       color: #f5f5f5;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .navbar {
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(10px);
     }
     .hero {
       text-align: center;
-      padding: 100px 20px;
+      padding: 120px 20px;
       background: linear-gradient(135deg, #1e3c72, #2a5298);
       color: white;
+      animation: fadeIn 2s ease-in-out;
     }
     .card {
-      background: #1a1f2b;
-      border: none;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
       border-radius: 15px;
       padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+    .btn-warning {
+      border-radius: 25px;
+      font-weight: bold;
+    }
+    .affiliate {
+      background: #111;
+      padding: 50px 20px;
+      text-align: center;
+      border-radius: 15px;
+      margin-top: 50px;
     }
     .footer {
       text-align: center;
       padding: 20px;
       margin-top: 50px;
-      background: #111;
+      background: #0b0b0b;
       color: #bbb;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
     }
   </style>
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">DigiCore Mine</a>
+      <a class="navbar-brand fw-bold text-warning" href="#">DigiCore Mine</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#plans">Plans</a></li>
+          <li class="nav-item"><a class="nav-link" href="#affiliate">Affiliate</a></li>
           <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
           <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a></li>
         </ul>
@@ -53,8 +79,8 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <h1>Welcome to DigiCore Mine</h1>
-    <p>The most secure and profitable mining platform</p>
+    <h1 class="fw-bold">Welcome to DigiCore Mine</h1>
+    <p class="lead">Secure • Profitable • Fast Mining Platform</p>
     <a href="#plans" class="btn btn-warning btn-lg mt-3">Start Mining</a>
   </section>
 
@@ -63,29 +89,39 @@
     <h2 class="text-center mb-4">Mining Plans</h2>
     <div class="row g-4">
       <div class="col-md-4">
-        <div class="card text-center">
+        <div class="card text-center p-4">
           <h3>Basic</h3>
           <p>₹500 / month</p>
           <p>Earn up to 5% daily</p>
-          <button class="btn btn-outline-warning">Choose</button>
+          <button class="btn btn-warning">Choose</button>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card text-center">
+        <div class="card text-center p-4">
           <h3>Standard</h3>
           <p>₹1500 / month</p>
           <p>Earn up to 10% daily</p>
-          <button class="btn btn-outline-warning">Choose</button>
+          <button class="btn btn-warning">Choose</button>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card text-center">
+        <div class="card text-center p-4">
           <h3>Premium</h3>
           <p>₹5000 / month</p>
           <p>Earn up to 15% daily</p>
-          <button class="btn btn-outline-warning">Choose</button>
+          <button class="btn btn-warning">Choose</button>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Affiliate Section -->
+  <div class="container" id="affiliate">
+    <div class="affiliate">
+      <h2 class="mb-3 text-warning">Affiliate Program</h2>
+      <p>Invite your friends & earn <b>10% commission</b> on every referral!</p>
+      <input type="text" class="form-control w-75 mx-auto text-center mb-3" value="https://digicoremine.com/ref=USER123" readonly>
+      <button class="btn btn-warning">Copy Link</button>
     </div>
   </div>
 
