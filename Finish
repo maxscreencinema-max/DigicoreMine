@@ -1,0 +1,9 @@
+cat >> src/App.jsx <<EOL
+==='pools' && <MiningPool token={token}/>}
+    {page==='pricing' && <Pricing/>}
+    {page==='faq' && <FAQ/>}
+  </div>);
+};
+
+export default App;
+EOL
