@@ -3,15 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Mining Site</title>
+  <title>DigicoreMine — Cloud Mining</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Navbar -->
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">⭐ MyMiningSite</a>
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <svg width="36" height="36" viewBox="0 0 24 24" class="me-2" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+          <rect x="2" y="3" width="20" height="18" rx="2" ry="2" stroke-width="1.2"/>
+          <path d="M7 9h10M7 13h10M7 17h6" stroke-width="1.2"/>
+        </svg>
+        <span class="fw-bold">DigicoreMine</span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -25,41 +32,42 @@
     </div>
   </nav>
 
-  <!-- Hero Banner -->
-  <header class="hero text-center text-white d-flex align-items-center">
-    <div class="container">
-      <h1 class="display-4 fw-bold">Welcome to MyMiningSite</h1>
-      <p class="lead">Cloud mining made easy — reliable, fast & transparent.</p>
-      <a href="#plans" class="btn btn-primary btn-lg mt-3">Get Started</a>
+  <!-- HERO -->
+  <header class="hero text-white d-flex align-items-center">
+    <div class="container text-center">
+      <h1 class="display-5 fw-bold">Reliable Cloud Mining Made Easy</h1>
+      <p class="lead mb-4">Start mining without hardware. Transparent pricing, fast payouts and 24/7 monitoring.</p>
+      <a href="#plans" class="btn btn-primary btn-lg me-2">View Plans</a>
+      <a href="#contact" class="btn btn-outline-light btn-lg">Contact Us</a>
     </div>
   </header>
 
-  <!-- Features -->
+  <!-- FEATURES -->
   <section id="features" class="py-5">
-    <div class="container text-center">
-      <h2 class="mb-4 fw-bold">Why Choose Us?</h2>
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold">Why DigicoreMine</h2>
       <div class="row g-4">
         <div class="col-md-4">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">⚡ High Speed</h5>
-              <p class="card-text">Our servers ensure fast & secure transactions.</p>
+              <h5 class="card-title">⚡ High Performance</h5>
+              <p class="card-text">Optimized rigs and best hashing performance to maximize returns.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">💰 Low Fees</h5>
-              <p class="card-text">Earn more with our minimal service charges.</p>
+              <h5 class="card-title">🔒 Secure & Transparent</h5>
+              <p class="card-text">Clear fee structure, instant dashboard and reliable payouts.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">📞 24/7 Support</h5>
-              <p class="card-text">We are here anytime you need us.</p>
+              <h5 class="card-title">📈 Real-time Stats</h5>
+              <p class="card-text">Track your earnings and hash-rate in real-time from your dashboard.</p>
             </div>
           </div>
         </div>
@@ -67,45 +75,50 @@
     </div>
   </section>
 
-  <!-- Pricing Plans -->
+  <!-- PLANS -->
   <section id="plans" class="py-5 bg-light">
     <div class="container text-center">
       <h2 class="mb-4 fw-bold">Our Plans</h2>
       <div class="row g-4">
         <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
+          <div class="card h-100 shadow-sm p-3">
             <div class="card-body">
               <h3>Starter</h3>
-              <p class="h4">₹299/month</p>
-              <ul class="list-unstyled">
-                <li>1 TH/s Power</li>
-                <li>Basic Support</li>
+              <p class="h4">₹299 / month</p>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>1 TH/s</li>
+                <li>Standard Support</li>
+                <li>Daily payouts</li>
               </ul>
               <a class="btn btn-outline-primary" href="#">Buy Now</a>
             </div>
           </div>
         </div>
+
         <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
+          <div class="card h-100 shadow-sm p-3 border-primary">
             <div class="card-body">
               <h3>Standard</h3>
-              <p class="h4">₹599/month</p>
-              <ul class="list-unstyled">
-                <li>5 TH/s Power</li>
+              <p class="h4">₹599 / month</p>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>5 TH/s</li>
                 <li>Priority Support</li>
+                <li>Advanced dashboard</li>
               </ul>
               <a class="btn btn-primary" href="#">Buy Now</a>
             </div>
           </div>
         </div>
+
         <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
+          <div class="card h-100 shadow-sm p-3">
             <div class="card-body">
               <h3>Premium</h3>
-              <p class="h4">₹999/month</p>
-              <ul class="list-unstyled">
-                <li>10 TH/s Power</li>
-                <li>Dedicated Support</li>
+              <p class="h4">₹999 / month</p>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>10 TH/s</li>
+                <li>Dedicated support</li>
+                <li>Custom SLA</li>
               </ul>
               <a class="btn btn-outline-dark" href="#">Buy Now</a>
             </div>
@@ -115,14 +128,27 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer id="contact" class="py-4 bg-dark text-white text-center">
-    <div class="container">
-      <p class="mb-1">© 2025 MyMiningSite — All Rights Reserved.</p>
-      <small>Contact: support@myminingsite.com</small>
+  <!-- CTA -->
+  <section class="py-5">
+    <div class="container text-center">
+      <div class="p-4 bg-primary text-white rounded shadow">
+        <h3 class="mb-2">Ready to start mining?</h3>
+        <p class="mb-3">Sign up and start earning—no hardware required.</p>
+        <a href="#contact" class="btn btn-light btn-lg">Contact Sales</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="py-4 bg-dark text-white">
+    <div class="container text-center">
+      <p class="mb-1">© <span id="year"></span> DigicoreMine — All Rights Reserved.</p>
+      <p class="small">Contact: <a href="mailto:support@digicoremine.com" class="link-light">support@digicoremine.com</a></p>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>document.getElementById('year').innerText = new Date().getFullYear();</script>
 </body>
 </html>
+EOF
